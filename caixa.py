@@ -1,5 +1,4 @@
 total = 0
-lista=[]
 while True:
     caixa = float(input("Informe um valor:"))
     nome= str(input("Nome do produto: "))
@@ -21,6 +20,5 @@ else:
     print ("\nTotal: ", total)
     print ("Valor do pagamento", pag)
     print ("Troco ", total1)
-    for n in nome:
-        print(n)
+    
    
