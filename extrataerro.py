@@ -7,12 +7,14 @@ while True:
     except ValueError:
             print('Digite apenas numeros')
             continue
-    cal = int(input("informe o calculo \n 1) adc \n2)subt\n3)mult\n4)div"))
+    cal = int(input("informe o calculo \n 1) adc \n2)subt\n3)mult\n4)div\n0)Sair"))
+    if cal == 0:
+        print ('saindo')
+        break
     calf = 0
     if cal ==1:
             calf = num1 + num2
             print ('resultado: ',calf)
-           
     if cal ==2: 
             calf = num1- num2
             print ('resultado: ',calf)
@@ -24,7 +26,7 @@ while True:
     try:      
         if cal ==4:
                 calf = num1 /num2
-                print ('resultado: ',calf)
+                print (f'resultado: {calf:.2f}')
     except ZeroDivisionError:
                 print("Não é possivel dividir por 0")
                 continue
