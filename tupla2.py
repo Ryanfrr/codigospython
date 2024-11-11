@@ -3,3 +3,4 @@ print(type(tu)) #Aqui ele é uma tupla
 
 tu= (list(tu)) #Com isso ele vira uma lista
 print(type(tu))
+print(tu)
